@@ -50,31 +50,31 @@ if __name__ == '__main__':
     main() 
     
 @st.cache(allow_output_mutation=True)
-def cache_lst():
-    lst = []
-    return lst
+def cache_lst1():
+    lst1 = []
+    return lst1
 
-lst = cache_lst()
+lst1 = cache_lst1()
 input = st.text_input('課題1の内容')
 
 if input:
-    lst.append(input)
+    lst1.append(input)
 if st.checkbox('delete1'):
-    delete = st.selectbox('課題1の削除する要素を選択して下さい', options=lst)
+    delete = st.selectbox('課題1の削除する要素を選択して下さい', options=lst1)
     if st.button('Delete1'):
-        lst.remove(delete)
+        lst1.remove(delete)
         st.success(f'Delete1 : {delete}')
 
 if st.checkbox('change1'):
-    change_from = st.selectbox('課題1の変更する要素を選択して下さい', options=lst)
-    change_index = lst.index(change_from)
+    change_from = st.selectbox('課題1の変更する要素を選択して下さい', options=lst1)
+    change_index = lst1.index(change_from)
     change_to = st.text_input('どのように課題1を変更しますか')
     if st.button('Change1'):
-        lst.remove(change_from)
-        lst.insert(change_index, change_to)
+        lst1.remove(change_from)
+        lst1.insert(change_index, change_to)
         st.success(f'Change1 {change_from} to {change_to}')
         
-st.table(lst)
+st.table(lst1)
 
 
 
@@ -106,31 +106,31 @@ if __name__ == '__main__':
     main() 
     
 @st.cache(allow_output_mutation=True)
-def cache_lst():
-    lst = []
-    return lst
+def cache_lst2():
+    lst2 = []
+    return lst2
 
-lst = cache_lst()
+lst2 = cache_lst2()
 input = st.text_input('課題2の内容')
 
 if input:
-    lst.append(input)
+    lst2.append(input)
 if st.checkbox('delete2'):
-    delete = st.selectbox('課題2の削除する要素を選択して下さい', options=lst)
+    delete = st.selectbox('課題2の削除する要素を選択して下さい', options=lst2)
     if st.button('Delete2'):
-        lst.remove(delete)
+        lst2.remove(delete)
         st.success(f'Delete2 : {delete}')
 
 if st.checkbox('change2'):
-    change_from = st.selectbox('課題2の変更する要素を選択して下さい', options=lst)
-    change_index = lst.index(change_from)
+    change_from = st.selectbox('課題2の変更する要素を選択して下さい', options=lst2)
+    change_index = lst2.index(change_from)
     change_to = st.text_input('どのように課題2を変更しますか')
     if st.button('Change2'):
-        lst.remove(change_from)
-        lst.insert(change_index, change_to)
+        lst2.remove(change_from)
+        lst2.insert(change_index, change_to)
         st.success(f'Change2 {change_from} to {change_to}')
         
-st.table(lst)
+st.table(lst2)
 
 
 
@@ -161,31 +161,31 @@ if __name__ == '__main__':
     main() 
 
 @st.cache(allow_output_mutation=True)
-def cache_lst():
-    lst = []
-    return lst
+def cache_lst3():
+    lst3 = []
+    return lst3
 
-lst = cache_lst()
+lst3 = cache_lst3()
 input = st.text_input('課題3の内容')
 
 if input:
-    lst.append(input)
+    lst3.append(input)
 if st.checkbox('delete3'):
-    delete = st.selectbox('課題3の削除する要素を選択して下さい', options=lst)
+    delete = st.selectbox('課題3の削除する要素を選択して下さい', options=lst3)
     if st.button('Delete3'):
-        lst.remove(delete)
+        lst3.remove(delete)
         st.success(f'Delete3 : {delete}')
 
 if st.checkbox('change3'):
-    change_from = st.selectbox('課題3の変更する要素を選択して下さい', options=lst)
-    change_index = lst.index(change_from)
+    change_from = st.selectbox('課題3の変更する要素を選択して下さい', options=lst3)
+    change_index = lst3.index(change_from)
     change_to = st.text_input('どのように課題3を変更しますか')
     if st.button('Change3'):
-        lst.remove(change_from)
-        lst.insert(change_index, change_to)
+        lst3.remove(change_from)
+        lst3.insert(change_index, change_to)
         st.success(f'Change3 {change_from} to {change_to}')
         
-st.table(lst)
+st.table(lst3)
 
 
 
